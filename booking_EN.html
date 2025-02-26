@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Oleander Hotel Web Reservation Form">
+	<meta name="author" content="aryata | creative">
+	<title>Oleander Hotel Web Reservation Form</title>
+
+	<!-- Favicons-->
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" type="image/x-icon" href="img/apple-touch-icon-57x57-precomposed.png">
+	<link rel="apple-touch-icon" type="image/x-icon" sizes="72x72" href="img/apple-touch-icon-72x72-precomposed.png">
+	<link rel="apple-touch-icon" type="image/x-icon" sizes="114x114" href="img/apple-touch-icon-114x114-precomposed.png">
+	<link rel="apple-touch-icon" type="image/x-icon" sizes="144x144" href="img/apple-touch-icon-144x144-precomposed.png">
+
+	<!-- GOOGLE WEB FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+	<!-- BASE CSS -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+	<link href="css/responsive.css" rel="stylesheet">
+	<link href="css/menu.css" rel="stylesheet">
+	<link href="css/animate.min.css" rel="stylesheet">
+	<link href="css/icon_fonts/css/all_icons_min.css" rel="stylesheet">
+	<link href="css/skins/square/grey.css" rel="stylesheet">
+
+	<!-- COLOR CSS -->
+	<link href="css/color_2.css" rel="stylesheet">
+
+	<!-- YOUR CUSTOM CSS -->
+	<link href="css/custom.css" rel="stylesheet">
+
+	<script src="js/modernizr.js"></script>
+	<!-- Modernizr -->
+</head>
+
+<body>
+	
+	<div id="preloader">
+		<div data-loader="circle-side"></div>
+	</div><!-- /Preload -->
+
+<div class="min-vh-100 d-flex flex-column">
+
+
+	<div class="d-flex flex-column my-auto">
+	<main class="container">
+	    <div class="row justify-content-center">
+	        <div class="col-xl-11">
+	            <div class="form_container">
+	                <div class="row">
+
+	                    <div class="col-lg-12">
+	                        <form id="custom" action="" method="POST">
+	                            <input id="website" name="website" type="text" value="">
+	                            <fieldset title="Reservation Request">
+	                                <legend>Oleander Hotel</legend>
+									
+									<div class="row">
+										<div class="col-md-6">
+											<div class="form-group">
+												<div class="styled-select">
+													<select name="room_type">
+														<option value="" selected>Room Type</option>
+														<option value="Standard">Standard</option>
+														<option value="Superior">Superior</option>
+														<option value="Family Room (1 Bathroom)">Family Room (1 Bathroom)</option>
+														<option value="Family Room (1 Bathroom)">Family Room (2 Bathrooms)</option>
+														<option value="Studio">Studio</option>
+														<option value="Suite (Land View)">Suite (Land View)</option>
+													</select>
+												</div>
+											</div>
+										</div>
+									</div>
+									
+	                                <div class="row">
+										<div class="col-md-6">
+											<div class="form-group">
+												<input class="form-control" type="text" name="check_in" id="check_in" placeholder="Check-In - Check Out Dates">
+											</div>
+										</div>
+									</div>
+									
+									<div class="row">
+										
+										<div class="col-md-6">
+											<div class="form-group">
+												<div class="qty-buttons">
+													<input type="button" value="+" class="qtyplus" name="adults" onclick="$('[name=adults]').trigger('change');" >
+													<input type="text" name="adults" onchange="adultsChange()" value="" class="qty form-control" placeholder="Number of Persons">
+													<input type="button" value="-" class="qtyminus" name="adults" onclick="$('[name=adults]').trigger('change');" >
+												</div>
+											</div>
+										</div>
+										</div>
+										
+										<!--
+										<div class="col-md-6">
+											<div class="form-group">
+												<div class="qty-buttons">
+													<input type="button" value="+" class="qtyplus" name="childs">
+													<input type="text" name="childs" value="" class="qty form-control" placeholder="Child">
+													<input type="button" value="-" class="qtyminus" name="childs">
+												</div>
+											</div>
+										</div>
+										-->
+									
+									
+
+	                                <div class="row">
+									<label>1. Person</label>
+										<div class="col-md-4">
+											<div class="form-group">
+												<input type="text" name="firstname" class="form-control" placeholder="First Name">
+											</div>
+										</div>
+										
+										<div class="col-md-4">
+											<div class="form-group">
+												<input type="text" name="lastname" class="form-control" placeholder="Last Name">
+											</div>
+										</div>
+										
+										<div class="col-md-4">
+											<div class="form-group">
+												<input type="text" name="telephone" class="form-control" placeholder="Birthdate (DD/MM/YYYY)">
+											</div>
+										</div>
+									</div>
+									
+									<div class="row">
+									<label>2. Guest</label>
+										<div class="col-md-4">
+											<div class="form-group">
+												<input type="text" name="firstname2" class="form-control" placeholder="First Name">
+											</div>
+										</div>
+										
+										<div class="col-md-4">
+											<div class="form-group">
+												<input type="text" name="lastname2" class="form-control" placeholder="Last Name">
+											</div>
+										</div>
+										
+										<div class="col-md-4">
+											<div class="form-group">
+												<input type="text" name="telephone2" class="form-control" placeholder="Birthdate (DD/MM/YYYY)">
+											</div>
+										</div>
+									</div>
+									
+									<div class="row">
+									<label>3. Guest</label>
+										<div class="col-md-4">
+											<div class="form-group">
+												<input type="text" name="firstname3" class="form-control" placeholder="First Name">
+											</div>
+										</div>
+										
+										<div class="col-md-4">
+											<div class="form-group">
+												<input type="text" name="lastname3" class="form-control" placeholder="Last Name">
+											</div>
+										</div>
+										
+										<div class="col-md-4">
+											<div class="form-group">
+												<input type="text" name="telephone3" class="form-control" placeholder="Birthdate (DD/MM/YYYY)">
+											</div>
+										</div>
+									</div>
+									
+									<div class="row">
+									<label>4. Guest</label>
+										<div class="col-md-4">
+											<div class="form-group">
+												<input type="text" name="firstname4" class="form-control" placeholder="First Name">
+											</div>
+										</div>
+										
+										<div class="col-md-4">
+											<div class="form-group">
+												<input type="text" name="lastname4" class="form-control" placeholder="Last Name">
+											</div>
+										</div>
+										
+										<div class="col-md-4">
+											<div class="form-group">
+												<input type="text" name="telephone4" class="form-control" placeholder="Birthdate (DD/MM/YYYY)">
+											</div>
+										</div>
+									</div>
+
+									<div class="row">
+										<div class="col-md-6">
+											<div class="form-group">
+												<input type="email" name="email" class="form-control" placeholder="Your E-Mail Address">
+											</div>
+										</div>
+										
+										
+	                                <div class="form-group">
+	                                    <textarea name="additional_message" class="form-control" style="height:150px;" placeholder="Notes"></textarea>
+	                                </div>
+										
+									</div>
+	                            </fieldset>
+
+	                            <input type="submit" class="finish" value="Submit Request">
+	                        </form>
+	                    </div>
+	                </div><!-- /Row -->
+	            </div><!-- /Form_container -->
+	        </div>
+	    </div>
+	    <!-- End row -->
+	</main>
+	</div>
+	<!-- /flex-column -->
+
+
+    </div>
+	<!-- /flex-column -->
+
+	<div class="cd-overlay-nav">
+		<span></span>
+	</div>
+	<!-- cd-overlay-nav -->
+
+	<div class="cd-overlay-content">
+		<span></span>
+	</div>
+	<!-- cd-overlay-content -->
+
+
+
+
+
+	<!-- SCRIPTS -->
+	<!-- Common script -->
+	<script src="js/common_scripts.js"></script>
+	<!-- Wizard script -->
+	<script src="js/reservation-validate_EN.js"></script> 
+	<!-- Menu script -->
+	<script src="js/velocity.min.js"></script>
+	<script src="js/main.js"></script>
+	<!-- Theme script -->
+	<script src="js/functions.js"></script>
+	<!-- Datepicker script -->
+	<script src="js/datepicker_func_EN.js"></script>
+	<script type="text/javascript">
+		function adultsChange(){
+			setTimeout(function(){
+                let adults = parseInt($('[name=adults]').val());
+			if (!isNaN(adults)) {
+				console.log(adults)
+				if (adults < 2) {
+					$('[name=firstname2]').rules('remove','required'); $('[name=firstname2]').trigger('keyup')
+					$('[name=lastname2]').rules('remove','required'); $('[name=lastname2]').trigger('keyup')
+					$('[name=telephone2]').rules('remove','required'); $('[name=telephone2]').trigger('keyup')
+				}
+				else {
+					$('[name=firstname2]').rules('add','required'); $('[name=firstname2]').trigger('keyup')
+					$('[name=lastname2]').rules('add','required'); $('[name=lastname2]').trigger('keyup')
+					$('[name=telephone2]').rules('add','required'); $('[name=telephone2]').trigger('keyup')
+				}
+				if (adults < 3) {
+					$('[name=firstname3]').rules('remove','required'); $('[name=firstname3]').trigger('keyup')
+					$('[name=lastname3]').rules('remove','required'); $('[name=lastname3]').trigger('keyup')
+					$('[name=telephone3]').rules('remove','required'); $('[name=telephone3]').trigger('keyup')
+				}
+				else {
+					$('[name=firstname3]').rules('add','required'); $('[name=firstname3]').trigger('keyup')
+					$('[name=lastname3]').rules('add','required'); $('[name=lastname3]').trigger('keyup')
+					$('[name=telephone3]').rules('add','required'); $('[name=telephone3]').trigger('keyup')
+				}
+				if (adults < 4) {
+					$('[name=firstname4]').rules('remove','required'); $('[name=firstname4]').trigger('keyup')
+					$('[name=lastname4]').rules('remove','required'); $('[name=lastname4]').trigger('keyup')
+					$('[name=telephone4]').rules('remove','required'); $('[name=telephone4]').trigger('keyup')
+				}
+				else {
+					$('[name=firstname4]').rules('add','required'); $('[name=firstname4]').trigger('keyup')
+					$('[name=lastname4]').rules('add','required'); $('[name=lastname4]').trigger('keyup')
+					$('[name=telephone4]').rules('add','required'); $('[name=telephone4]').trigger('keyup')
+				}
+			}
+            },200)
+		}
+	</script>
+	
+</body>
+</html>

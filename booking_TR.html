@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Oleander Hotel Web Reservation Form">
+	<meta name="author" content="aryata | creative">
+	<title>Oleander Hotel Web Reservation Form</title>
+
+	<!-- Favicons-->
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" type="image/x-icon" href="img/apple-touch-icon-57x57-precomposed.png">
+	<link rel="apple-touch-icon" type="image/x-icon" sizes="72x72" href="img/apple-touch-icon-72x72-precomposed.png">
+	<link rel="apple-touch-icon" type="image/x-icon" sizes="114x114" href="img/apple-touch-icon-114x114-precomposed.png">
+	<link rel="apple-touch-icon" type="image/x-icon" sizes="144x144" href="img/apple-touch-icon-144x144-precomposed.png">
+
+	<!-- GOOGLE WEB FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+	<!-- BASE CSS -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+	<link href="css/responsive.css" rel="stylesheet">
+	<link href="css/menu.css" rel="stylesheet">
+	<link href="css/animate.min.css" rel="stylesheet">
+	<link href="css/icon_fonts/css/all_icons_min.css" rel="stylesheet">
+	<link href="css/skins/square/grey.css" rel="stylesheet">
+
+	<!-- COLOR CSS -->
+	<link href="css/color_2.css" rel="stylesheet">
+
+	<!-- YOUR CUSTOM CSS -->
+	<link href="css/custom.css" rel="stylesheet">
+
+	<script src="js/modernizr.js"></script>
+	<!-- Modernizr -->
+		
+</head>
+
+<body>
+	
+	<div id="preloader">
+		<div data-loader="circle-side"></div>
+	</div><!-- /Preload -->
+
+<div class="min-vh-100 d-flex flex-column">
+
+
+	<div class="d-flex flex-column my-auto">
+	<main class="container">
+	    <div class="row justify-content-center">
+	        <div class="col-xl-11">
+	            <div class="form_container">
+	                <div class="row">
+
+	                    <div class="col-lg-12">
+	                        <form id="custom" action="" method="POST">
+	                            <input id="website" name="website" type="text" value="">
+	                            <fieldset title="Rezervasyon Talebi">
+	                                <legend>Oleander Hotel</legend>
+									
+									<div class="row">
+										<div class="col-md-6">
+											<div class="form-group">
+												<div class="styled-select">
+													<select name="room_type">
+														<option value="" selected>Oda Tipi</option>
+														<option value="Standard">Standard</option>
+														<option value="Superior">Superior</option>
+														<option value="Aile Odası (1 Banyolu)">Aile Odası (1 Banyolu)</option>
+														<option value="Aile Odası (2 Banyolu)">Aile Odası (2 Banyolu)</option>
+														<option value="Stüdyo">Stüdyo</option>
+														<option value="Süit (Kara Manzaralı">Süit (Kara Manzaralı</option>
+													</select>
+												</div>
+											</div>
+										</div>
+									</div>
+									
+	                                <div class="row">
+										<div class="col-md-6">
+											<div class="form-group">
+												<input class="form-control" type="text" name="check_in" id="check_in" placeholder="Giriş - Çıkış Tarihleri">
+											</div>
+										</div>
+									</div>
+									
+									<div class="row">
+										
+										<div class="col-md-6">
+											<div class="form-group">
+												<div class="qty-buttons">
+													<input type="button" value="+" class="qtyplus" name="adults">
+													<input type="text" name="adults" value="" class="qty form-control" placeholder="Kişi Sayısı">
+													<input type="button" value="-" class="qtyminus" name="adults">
+												</div>
+											</div>
+										</div>
+										</div>
+										
+										<!--
+										<div class="col-md-6">
+											<div class="form-group">
+												<div class="qty-buttons">
+													<input type="button" value="+" class="qtyplus" name="childs">
+													<input type="text" name="childs" value="" class="qty form-control" placeholder="Child">
+													<input type="button" value="-" class="qtyminus" name="childs">
+												</div>
+											</div>
+										</div>
+										-->
+									
+									
+									
+									
+
+	                                <div class="row">
+									<label>1. Misafir</label>
+										<div class="col-md-4">
+											<div class="form-group">
+												<input type="text" name="firstname" class="form-control" placeholder="Ad">
+											</div>
+										</div>
+										
+										<div class="col-md-4">
+											<div class="form-group">
+												<input type="text" name="lastname" class="form-control" placeholder="Soyad">
+											</div>
+										</div>
+										
+										<div class="col-md-4">
+											<div class="form-group">
+												<input type="text" name="telephone" class="form-control" placeholder="Doğum Tarihi (GG/AA/YYYY)">
+											</div>
+										</div>
+									</div>
+									
+									<div class="row">
+									<label>2. Misafir</label>
+										<div class="col-md-4">
+											<div class="form-group">
+												<input type="text" name="firstname2" class="form-control" placeholder="Ad">
+											</div>
+										</div>
+										
+										<div class="col-md-4">
+											<div class="form-group">
+												<input type="text" name="lastname2" class="form-control" placeholder="Soyad">
+											</div>
+										</div>
+										
+										<div class="col-md-4">
+											<div class="form-group">
+												<input type="text" name="telephone2" class="form-control" placeholder="Doğum Tarihi (GG/AA/YYYY)">
+											</div>
+										</div>
+									</div>
+									
+									<div class="row">
+									<label>3. Misafir</label>
+										<div class="col-md-4">
+											<div class="form-group">
+												<input type="text" name="firstname3" class="form-control" placeholder="Ad">
+											</div>
+										</div>
+										
+										<div class="col-md-4">
+											<div class="form-group">
+												<input type="text" name="lastname3" class="form-control" placeholder="Soyad">
+											</div>
+										</div>
+										
+										<div class="col-md-4">
+											<div class="form-group">
+												<input type="text" name="telephone3" class="form-control" placeholder="Doğum Tarihi (GG/AA/YYYY)">
+											</div>
+										</div>
+									</div>
+									
+									<div class="row">
+									<label>4. Misafir</label>
+										<div class="col-md-4">
+											<div class="form-group">
+												<input type="text" name="firstname4" class="form-control" placeholder="Ad">
+											</div>
+										</div>
+										
+										<div class="col-md-4">
+											<div class="form-group">
+												<input type="text" name="lastname4" class="form-control" placeholder="Soyad">
+											</div>
+										</div>
+										
+										<div class="col-md-4">
+											<div class="form-group">
+												<input type="text" name="telephone4" class="form-control" placeholder="Doğum Tarihi (GG/AA/YYYY)">
+											</div>
+										</div>
+									</div>
+
+									<div class="row">
+										<div class="col-md-6">
+											<div class="form-group">
+												<input type="email" name="email" class="form-control" placeholder="E-Posta Adresiniz">
+											</div>
+										</div>
+										
+										
+	                                <div class="form-group">
+	                                    <textarea name="additional_message" class="form-control" style="height:150px;" placeholder="Notlar"></textarea>
+	                                </div>
+										
+									</div>
+	                            </fieldset>
+
+	                            <input type="submit" class="finish" value="Talebi Gönder">
+	                        </form>
+	                    </div>
+	                </div><!-- /Row -->
+	            </div><!-- /Form_container -->
+	        </div>
+	    </div>
+	    <!-- End row -->
+	</main>
+	</div>
+	<!-- /flex-column -->
+
+
+    </div>
+	<!-- /flex-column -->
+
+	<div class="cd-overlay-nav">
+		<span></span>
+	</div>
+	<!-- cd-overlay-nav -->
+
+	<div class="cd-overlay-content">
+		<span></span>
+	</div>
+	<!-- cd-overlay-content -->
+
+
+
+
+
+	<!-- SCRIPTS -->
+	<!-- Common script -->
+	<script src="js/common_scripts.js"></script>
+	<!-- Wizard script -->
+	<script src="js/reservation-validate_TR.js"></script> 
+	<!-- Menu script -->
+	<script src="js/velocity.min.js"></script>
+	<script src="js/main.js"></script>
+	<!-- Theme script -->
+	<script src="js/functions.js"></script>
+	<!-- Datepicker script -->
+	<script src="js/datepicker_func_TR.js"></script>
+	
+	
+	
+</body>
+</html>
